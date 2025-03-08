@@ -1,0 +1,62 @@
+#app{
+    display: grid; 
+    grid-template-columns: 32.8% 67.20%;
+    height: 100vh;
+    gap: .8125rem;
+    overflow: hidden;
+    background-color: var(--shape-background);
+    padding: 1.25rem 1.6875rem;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+aside{
+    position: relative;
+    z-index: 2;
+    
+    .box img{
+        position: absolute;
+        width: 100%;
+        height: 728px;
+        object-fit: cover;
+        z-index: 1;
+        border-radius: .75rem;
+       
+    }
+
+    & > img{
+        width: 45.85px;
+        height: 48px;
+        position: relative;
+        z-index: 2;
+        left: 2rem;
+        top: 2rem;
+    }
+
+    h1{
+       color: #FF598B;
+       font-family: var(--font-logo);
+       font-size: 2.5rem; 
+       position: relative;
+        z-index: 2;
+        left: 2rem;
+        top: 2rem;
+    }
+
+    p{
+        font: var(--body-md);
+        color: var(--text-heading-color);
+        position: relative;
+        z-index: 2;
+        left: 2rem;
+        top: 2rem;
+    }
+}
+
+main{
+    padding: 5rem 8.125rem;
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+}
+
+

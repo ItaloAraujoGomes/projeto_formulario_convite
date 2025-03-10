@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-body);
+    color: var(--input-placeholder);
 }
 
 :root{
@@ -43,4 +45,33 @@ img{
 
 body{
     background-color: var(--shape-background);
+}
+
+.icon{
+    height: 24px;
+    width: 24px;
+}
+
+.legend{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    
+}
+
+legend{
+    font: var(--heading-sm);
+    color: var(--text-heading-color);
+}
+
+.flex{
+    display: flex;
+}
+
+.gap{
+    gap: 1rem;
+}
+
+label{
+    font: var(--body-sm);
 }

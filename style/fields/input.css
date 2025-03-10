@@ -1,0 +1,12 @@
+fieldset{
+    all: unset;
+    width: 100%;
+}
+
+label:not(.not){
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+}
+
+

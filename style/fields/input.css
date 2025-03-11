@@ -9,4 +9,34 @@ label:not(.not){
     margin-bottom: .75rem;
 }
 
+input{
 
+    
+    &:invalid {
+        border: 0.125rem solid var(--danger-color);
+    }
+
+    &:not(:focus):valid + .error{
+        display: none;
+    }
+}
+
+
+.error{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    margin-top: .5rem;
+
+
+    span{
+        font: var(--body-xs);
+        color: var(--danger-color);
+    }
+
+
+}
+
+#customization > .legend {
+    margin-top: 3rem;
+}

@@ -9,55 +9,83 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.css" />
     <title>Festivite</title>
   </head>
   <body>
     <div id="app">
-      <aside >
+      <aside>
         <div class="box">
-          <img src="assets/Background.png" alt="">
+          <img src="assets/Background.png" alt="" />
         </div>
-        <img src="assets/icons/Logo.svg" alt="Logo da empresa">
+        <img src="assets/icons/Logo.svg" alt="Logo da empresa" />
         <h1>Festivite</h1>
         <p>Crie um convite digital para o seu evento</p>
       </aside>
-      <main >
+      <main>
         <h2>Crie seu convite</h2>
-        <form >
+        <form>
           <fieldset id="about">
             <div class="legend">
-              <img src="assets/icons/calendar.svg" alt="" class="icon">
+              <img src="assets/icons/calendar.svg" alt="" class="icon" />
               <legend>Sobre o evento</legend>
             </div>
             <div class="input-wrapper">
               <label for="event">Título</label>
-              <input type="text" name="event" id="event" placeholder="Nome do evento">
+              <input
+                type="text"
+                name="event"
+                id="event"
+                placeholder="Nome do evento"
+                required
+              />
             </div>
 
             <div class="flex gap">
               <div class="input-wrapper">
                 <label for="initial">Início</label>
-                <input type="text" name="initial" id="initial" placeholder="DD/MM/AAAA, --:--" >
+                <input
+                  type="text"
+                  name="initial"
+                  id="initial"
+                  placeholder="DD/MM/AAAA, --:--"
+                  required
+                />
               </div>
               <div class="input-wrapper">
                 <label for="final">Fim</label>
-                <input type="text" name="final" id="final" placeholder="DD/MM/AAAA, --:--" >
+                <input
+                  type="text"
+                  name="final"
+                  id="final"
+                  placeholder="DD/MM/AAAA, --:--"
+                  required
+                />
               </div>
             </div>
 
             <div class="flex gap">
-              <div class="input-wrapper" >
+              <div class="input-wrapper">
                 <label>Tipo</label>
                 <div class="radio-wrapper">
                   <div class="radio-inner">
-                    <input type="radio" name="presence-shift" id="presence" value="presence">
+                    <input
+                      type="radio"
+                      name="presence-shift"
+                      id="presence"
+                      value="presence"
+                    />
                     <div class="radio-image"></div>
                     <label for="presence" class="not">Presencial</label>
                   </div>
 
                   <div class="radio-inner">
-                    <input type="radio" name="presence-shift" id="online" value="online">
+                    <input
+                      type="radio"
+                      name="presence-shift"
+                      id="online"
+                      value="online"
+                    />
                     <div class="radio-image2"></div>
                     <label for="online" class="not">Online</label>
                   </div>
@@ -65,13 +93,95 @@
               </div>
               <div class="input-wrapper">
                 <label for="local">Local</label>
-                <input type="text" name="local" id="local" placeholder="Link ou endereço" >
+                <input
+                  type="text"
+                  name="local"
+                  id="local"
+                  placeholder="Link ou endereço"
+                  required
+                />
               </div>
             </div>
 
             <div class="input-wrapper">
               <label for="description">Descrição</label>
-              <input type="text" name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
+              <input
+                type="text"
+                name="description"
+                id="description"
+                placeholder="Escreva sobre os detalhes do evento"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset id="customization">
+            <div class="legend">
+              <img
+                src="assets/icons/paintbrush-vertical.svg"
+                alt="Símbolo de personalização"
+                class="icon"
+              />
+              <legend>Personalização</legend>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="color">Cor principal</label>
+              <div class="input-color">
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+
+                <div class="color-wrapper">
+                  <input type="radio" name="color" id="color" />
+                  <span class="inner-color"></span>
+                </div>
+              </div>
             </div>
           </fieldset>
         </form>
@@ -79,4 +189,3 @@
     </div>
   </body>
 </html>
-                   

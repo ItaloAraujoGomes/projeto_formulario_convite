@@ -57,7 +57,7 @@ main{
     padding: 5rem 8.125rem;
     background-color: var(--shape-body);
     border-radius: .75rem;
-    
+    overflow: auto;
 }
 
 h2{

@@ -24,7 +24,7 @@
       </aside>
       <main>
         <h2>Crie seu convite</h2>
-        <form>
+        <form enctype="multipart/form-data">
           <fieldset id="about">
             <div class="legend">
               <img src="assets/icons/calendar.svg" alt="" class="icon" />
@@ -260,6 +260,20 @@
                   <label for="event-option">Outro</label>
                 </div>
               </div>
+            </div>
+
+            <div class="input-wrapper">
+              <div class="style">
+                <label> Estilo</label>
+                <label class="toggle" for="switch">
+                  <input type="checkbox" id="switch" name="switch" placeholder="###">
+                  <span class="slider"></span>
+                  <span class="toggle-label" data-off="Escuro" data-on="Claro"></span>
+                </label>
+                
+              </div>
+
+              <div class="photo"></div>
             </div>
           </fieldset>
         </form>

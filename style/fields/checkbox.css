@@ -1,0 +1,66 @@
+.toggle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 10px;
+    position: relative;
+    
+    input{
+        display: none;
+        
+        &:checked + .slider{
+            background-color: var(--brand-light);
+        }
+
+        &:checked + .slider::before{
+            transform: translateX(30px);
+        }
+
+        &:checked + .slider + .toggle-label::after{
+            content: attr(data-on);
+        }
+    }
+
+    .slider{
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 32px;
+        background-color: var(input-base);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        border: 1px solid var(--input-stroke);
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            background-color: white;
+            left: 4px;
+            bottom: 3px;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+    }
+
+    .toggle-label::after{
+        content: attr(data-off);
+        
+        transition: 0.4s;
+    }
+}
+
+.toggle-label{
+    position: absolute;
+    left: 80px;
+    top: 5px;
+    inset: 1;
+    color: var(--text-heading-color);
+}
+
+
+.style > label{
+    color: var(--text-body-color)
+}

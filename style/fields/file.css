@@ -1,6 +1,7 @@
 #customization .input-wrapper2{
     display: grid;
     grid-template-columns: 31.45% 68.55%;
+    
 
     .photo{
         font: 500 .875rem/normal var(--font-body);
@@ -18,6 +19,7 @@
                 all: unset;
                 padding: 5px;
                 
+                
 
                 &::file-selector-button{
                     padding: .8rem 1.5rem;
@@ -26,6 +28,7 @@
                     border-radius: .5rem;
                     background-color: var(--shape-button);
                     color: var(--text-heading-color);
+                    cursor: pointer;
                 }
                 
             }

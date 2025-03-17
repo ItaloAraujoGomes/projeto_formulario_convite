@@ -115,7 +115,7 @@
             </div>
           </fieldset>
 
-          <fieldset id="customization">
+          <fieldset id="customization" class="grid gap-2">
             <div class="legend">
               <img
                 src="assets/icons/paintbrush-vertical.svg"
@@ -223,7 +223,7 @@
                   />
                   <label for="event-option">Casamento</label>
                 </div>
- 
+
                 <div class="radio-option">
                   <input type="radio" name="event-option" id="event-option" />
                   <img
@@ -320,12 +320,98 @@
               <div class="photo">
                 <label for="photo">Foto de capa</label>
                 <div class="dropzone">
-                  <img src="assets/icons/secondary.svg" alt="" class="icon">
+                  <img src="assets/icons/secondary.svg" alt="" class="icon" />
                   <input type="file" name="photo" id="photo" />
                 </div>
               </div>
             </div>
           </fieldset>
+
+          <fieldset id="contact">
+            <div class="legend">
+              <img
+                src="assets/icons/contact.svg"
+                alt="Ícone de contato"
+                class="icon"
+              />
+              <legend>Dados para contato</legend>
+            </div>
+
+            <div class="input-wrapper relative">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome completo"
+                required
+              />
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="" />
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+
+            <div class="input-wrapper grid grid-columns gap">
+              <div class="relative">
+                <label for="email">E-mail</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="exemplo@email.com"
+                  required
+                />
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="" />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+              <div class="relative">
+                <label for="phone">Telefone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="(99) 99999-9999"
+                  required
+                />
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="" />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="line"></div>
+
+          <div class="terms">
+            <div class="terms-option">
+              <input type="checkbox" name="term" id="term" />
+              <label for="term"
+                >Li e concordo com os <span>Termos e Condições</span> e com a
+                <span>Política de Privacidade</span></label
+              >
+            </div>
+            <div class="terms-option">
+              <input type="checkbox" name="term" id="term" />
+              <label for="term"
+                >Aceito receber atualizações e promoções por e-mail</label
+              >
+            </div>
+            <div class="terms-option">
+              <input type="checkbox" name="term" id="term" />
+              <label for="term"
+                >Aceito receber atualizações e promoções por SMS</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">
+            <img src="assets/icons/ticket.svg" alt="" />
+            <span>Gerar convite</span>
+          </button>
         </form>
       </main>
     </div>

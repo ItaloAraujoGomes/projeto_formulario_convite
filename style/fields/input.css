@@ -11,11 +11,6 @@ label:not(.not){
 
 input{
 
-    
-    &:invalid {
-        border: 0.125rem solid var(--danger-color);
-    }
-
     &:not(:focus):valid + .error{
         display: none;
     }
@@ -26,9 +21,14 @@ input{
     display: flex;
     align-items: center;
     gap: .3rem;
-    margin-top: .5rem;
+    margin-top: .2rem;
+    position: absolute;
 
-
+    img{
+        height: 16px;
+        width: 16px;
+    }
+    
     span{
         font: var(--body-xs);
         color: var(--danger-color);
@@ -39,4 +39,27 @@ input{
 
 #customization > .legend {
     margin-top: 3rem;
+}
+
+
+button{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .7rem 1.75rem;
+    margin-left: auto;
+    margin-top: 3rem;
+    background-color: #1D6FB6;
+    border-radius: .5rem;
+    border: 1px solid var(#1D6FB6);
+    cursor: pointer;
+
+    img{
+        height: 20px;
+        width: 20px;
+    }
+    span{
+        font: 500 1rem/normal var(--font-body);
+        color: var(--text-heading-color)
+    }
 }

@@ -68,3 +68,35 @@
 .style > label{
     color: var(--text-body-color)
 }
+
+.terms{
+    margin-top: 2.5rem;
+}
+
+.terms-option{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+    label{
+        font: var(--body-sm);
+        color: var(--text-body-color);
+
+        span{
+            color: var(--brand-light);
+            text-decoration: underline;
+        }
+    }
+
+    input{
+        all: unset;
+        background-image: url(../../assets/icons/checkbox\ unchecked.svg);
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+
+        &:checked{
+            background-image: url(../../assets/icons/checkbox\ checked.svg);
+        }
+    }
+}

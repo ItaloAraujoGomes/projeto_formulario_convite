@@ -71,6 +71,9 @@ legend{
 .gap{
     gap: 1rem;
 }
+.gap-2{
+    gap: 1.75rem;
+}
 
 label{
     font: var(--body-sm);
@@ -79,4 +82,19 @@ label{
 
 .grid{
     display: grid;
+}
+
+.grid-columns{
+    grid-template-columns: 48.57% 48.57%;
+}
+
+.relative{
+    position: relative;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: var(--input-stroke);
 }

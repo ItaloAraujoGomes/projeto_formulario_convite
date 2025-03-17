@@ -22,3 +22,22 @@ input[type=text]{
     padding-bottom: 6rem;
     
 }
+
+#contact .input-wrapper input{
+    &:invalid{
+        border: 1px solid var(--danger-color);
+    }
+
+    &:focus-within{
+        border: none;
+    }
+
+    &:focus + .error{
+        display: none;
+        
+    }
+}
+
+#contact{
+    margin-top: 3rem;
+}

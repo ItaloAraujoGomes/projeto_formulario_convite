@@ -1,0 +1,42 @@
+#customization .input-wrapper2{
+    display: grid;
+    grid-template-columns: 31.45% 68.55%;
+
+    .photo{
+        font: 500 .875rem/normal var(--font-body);
+
+        label{
+            margin-bottom: 10px;
+        }
+
+        .dropzone{
+            display: flex;
+            align-items: center;
+            justify-items: end;
+            position: relative;
+            input{
+                all: unset;
+                padding: 5px;
+                
+
+                &::file-selector-button{
+                    padding: .8rem 1.5rem;
+                    padding-left: 2.5rem;
+                    border: 1px solid var(--shape-button);
+                    border-radius: .5rem;
+                    background-color: var(--shape-button);
+                    color: var(--text-heading-color);
+                }
+                
+            }
+
+            img{
+                position: absolute;
+                inset: 2;
+                left: 15px;
+            }
+
+            
+        }
+    }
+}

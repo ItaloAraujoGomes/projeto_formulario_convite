@@ -76,3 +76,7 @@ label{
     font: var(--body-sm);
     color: var(--text-body-color);
 }
+
+.grid{
+    display: grid;
+}
